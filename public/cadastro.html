@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Tributário</title>
+    <link rel="shortcut icon" href="Excelsitude.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assents/css/geral.css">
+    <link rel="stylesheet" href="../assents/css/form.css">
+</head>
+<body>
+    <main class="conteiner">
+        <header>
+            <div class="top-logo">
+                <img id="logo" src="./Excelsitude.png" alt="Lista Tributária">
+                <button id="bt-menu">Menu</button>
+            </div>
+            <ul id="menu">
+                <a href="./cadastro.html" class="atual"><li>Cadastro</li></a>
+                <a href="./index.html"><li>Lista</li></a>
+                <a href="./tributar.html"><li>Tributar</li></a>
+            </ul>
+        </header>
+
+        <section class="corpo">
+            <h1>Cadastro</h1>
+            <form action="../assents/php/controlador.php" method="post">
+                <input type="hidden" name="pedido" value="cadastro">
+                <label for="nome">Introduza o nome:</label>
+                <input type="text" name="nome" id="nome" required maxlength="80">
+                <label for="tributo">Introduza o tributo inicial:</label>
+                <input type="number" name="tributo" id="tributo" required step=".01">
+                <input type="submit" value="Cadastrar">
+            </form>
+        </section>
+    </main>
+
+    <script src="../assents/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+form {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: .5rem;
+}
+
+form > label, form > input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+form > input[type=submit] {
+    background-color: black;
+    margin-top: 10px;
+    padding: .5rem;
+    color: white;
+    border: none;
+    border-radius: .4rem;
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--verde-escuro);
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+table {
+    margin: 20px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    background-color: var(--azul-escuro);
+    color: wheat;
+}
+
+tr:nth-child(even) {
+    background-color: var(--verde);
+}
+
+.nit, .tributo {
+    text-align: center;
+}
+
+@media (min-width: 450px) {
+    .nome {
+        min-width: 200px;
+    }
+}
+
+@media (min-width: 500px) {
+    .nome {
+        min-width: 300px;
+    }
+}
+
+@media (min-width: 735px) {
+    table {
+        font-size: 1.3em;
+    }
+    th, td {
+        padding: 5px;
+    }
+    .nome {
+        text-align: left;
+    }
+}

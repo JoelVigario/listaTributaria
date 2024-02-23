@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+:root {
+    --verde: #1df08d;
+    --verde-escuro: #04502c;
+    --cyan: cyan;
+    --azul-claro: #145cf8;
+    --azul: blue;
+    --azul-escuro: #00003f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: var(--azul-escuro);
+    text-align: center;
+    padding: 1rem;
+}
+
+#user_name {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.conteiner > header {
+    background-color: #13131c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#menu {
+    display: none;
+}
+
+#menu.visivel {
+    display: block;
+}
+
+.top-logo {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.top-logo #bt-menu {
+    background-color: var(--azul);
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    /* height: max-content; */
+    padding: .7rem;
+}
+
+.top-logo #bt-menu:hover {
+    background-color: var(--cyan);
+    color: black;
+}
+
+.conteiner > header > #logo {
+    display: block;
+    font-size: 1.5em;
+}
+
+.conteiner > header > #menu li {
+    list-style: none;
+}
+
+.conteiner > header > #menu a {
+    display: block;
+    background-color: var(--verde-escuro);
+    color: white;
+    text-decoration: none;
+    margin-top: 7px;
+    padding: .5rem;
+    border-radius: .5rem;
+    transition: .4s;
+}
+
+.conteiner > header > #menu a:hover, .conteiner > header > #menu a.atual {
+    background-color: var(--verde);
+    color: black;
+}
+
+@media screen and (min-width: 600px) {
+    .conteiner {
+        display: flex;
+        width: 100vw;
+        min-height: 100vh;
+    }
+
+    .conteiner > header {
+        width: 170px;
+        background-color: #13131c;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .top-logo #bt-menu {
+        display: none;
+    }
+
+    .top-logo {
+        justify-content: center;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .conteiner > header > #logo {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .conteiner > header > #menu li {
+        list-style: none;
+    }
+    
+    .conteiner > header > #menu a {
+        display: block;
+        background-color: var(--verde-escuro);
+        color: white;
+        text-decoration: none;
+        margin-top: 7px;
+        padding: .5rem;
+        border-radius: .5rem;
+        transition: .4s;
+    }
+
+    .conteiner > header > #menu a:hover, .conteiner > header > #menu a.atual {
+        background-color: var(--verde);
+        color: black;
+    }
+
+    .conteiner > .corpo {
+        width: calc(100vw - 170px - 16px);
+        padding: 16px;
+    }
+}

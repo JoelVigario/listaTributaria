@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Tributária</title>
+    <link rel="shortcut icon" href="Excelsitude.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assents/css/geral.css">
+    <link rel="stylesheet" href="../assents/css/tabela.css">
+</head>
+<body>
+    <main class="conteiner">
+        <header>
+            <div class="top-logo">
+                <img id="logo" src="./Excelsitude.png" alt="Lista Tributária">
+                <button id="bt-menu">Menu</button>
+            </div>
+            <ul id="menu">
+                <a href="./cadastro.html"><li>Cadastro</li></a>
+                <a href="./index.html" class="atual"><li>Lista</li></a>
+                <a href="./tributar.html"><li>Tributar</li></a>
+            </ul>
+        </header>
+        <section class="corpo">
+            <h1>Lista Tributária para festa do fim do ano &#x1f604;</h1>
+            <table id="tributarios">
+                <tr>
+                    <th scope="col" title="Número de Identificação Tributária">NIT</th>
+                    <th scope="col" class="nome">Nome</th>
+                    <th scope="col">Tributo</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script src="../assents/js/menu.js"></script>
+    <script src="../assents/js/jquery-3.7.1.js"></script>
+    <script src="../assents/js/buscarTributarios.js"></script>
+</body>
+</html>
